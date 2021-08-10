@@ -6,7 +6,7 @@ IF EXIST "%var%\venv" (
 	cd ../../
 	call jupyter notebook
 ) ELSE (
-	call python3 -m venv venv
+	call python -m venv venv
 	cd venv/Scripts/
 	call activate.bat
 	cd ../../
